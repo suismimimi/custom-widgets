@@ -1,0 +1,90 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family={{fontName}}');
+
+* {
+    font-family: '{{fontName}}', sans-serif;
+    overflow: hidden;
+    font-weight: {{fontWeight}};
+}
+
+.main-container{
+    display: {{alignMessages}};
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    height:98%;
+    margin-bottom:10px;
+    box-sizing: border-box;
+}
+
+.message-row{
+  	flex: 0 0 auto;
+    width: 100%;
+    margin-bottom:5px;
+    padding:5px;
+    vertical-align: baseline;
+  	
+  	animation: fadeIn 1s linear 1;
+}
+
+.badge{
+    display:{{displayBadges}};
+    height:{{fontSize}}px;
+}
+
+/* contains both user-box and user-message */
+.content{
+  	width: 90%;
+    border-radius: 15px;
+    padding: 10px;
+    color: #E7E6E9;
+    background-color: #7E8AF7;
+  	text-align: center;
+  
+  	animation: rigormortis 7s cubic-bezier(.76,.29,0,1.01) 1;
+  	animation-delay: 8s;
+  	animation-fill-mode: forwards;
+}
+
+/* color changing animation */
+@keyframes rigormortis{
+  0%{
+  	background-color: #7E8AF7;
+    color: #E7E6E9;
+  }
+  50%{
+    background-color: #404985;
+    color: #E1DFDF;
+  }
+  100%{
+    background-color: #B9B7C3;
+  }
+}
+
+
+.user-box{
+    display:block;
+    font-size:{{fontSize}}px;
+}
+
+.user-box > span{
+    font-size:{{fontSize}}px;
+}
+
+.user-message{
+    display:block;
+    font-size:{{fontSize}}px;
+    word-wrap: break-word;
+  	padding: 20px;
+}
+
+.emote{
+    height: {emoteSize}px;
+    vertical-align: middle;
+    background-repeat:no-repeat;
+}
+
+.action{
+    font-style: italic;
+}
