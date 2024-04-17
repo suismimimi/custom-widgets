@@ -1,0 +1,55 @@
+{
+    "someText": {
+      "type": "text",
+      "label": "Some Text",
+      "value": "Default text"
+    },
+    "someTextField": {
+      "type": "textfield",
+      "label": "Some Text",
+      "value": "Default other text"
+    },
+    "someColor": {
+      "type": "color",
+      "label": "Some color",
+      "value": "#ff0000"
+    },
+    "someColorPicker": {
+      "type": "colorpicker",
+      "label": "Some other color",
+      "value": "#0000FF"
+    },
+    "someNumber": {
+      "type": "number",
+      "label": "Count",
+      "value": 10
+    },
+    "someSlider": {
+      "type": "slider",
+      "label": "Counter",
+      "value": 10,
+      "min": 0,
+      "max": 100,
+      "steps": 1
+    },
+    "something": {
+      "type": "dropdown",
+      "label": "Choose an option:",
+      "value": "blue",
+      "options": {
+        "blue": "Blue thing",
+        "apple": "Some apple",
+        "7": "Lucky number"
+      }
+    },
+    "someFont": {
+      "type": "googleFont",
+      "label": "Choose a font:",
+      "value": "OpenSans"
+    },
+    "someFinal": {
+      "type": "textfield",
+      "label": "Some Text",
+      "value": "Default other text"
+    }
+  }
